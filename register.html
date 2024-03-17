@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-color: rgb(198, 224, 240);
+            font-size: x-large;
+        }
+        sup{
+            color: red;
+        }
+        p{
+            display: inline;
+        }
+        #p1{
+            color: red;
+        }
+        #p2{
+            color: rgb(19, 215, 249);
+            position: relative;
+            left: 0.5cm;
+        }
+        legend{
+            color: blue;
+            text-align: center;
+            font-size: xx-large;
+        }
+        /* input{
+            width: 10%;
+        } */
+        
+    </style>
+</head>
+<body>
+    
+    
+        <legend>Registration Form</legend>
+    <form action="submit" method="post">
+        
+    <label for="fn">First Name(Minimum 6 characters)<sup>*</sup></label>
+    <input type="text" id="fn">
+    <br>
+    <br>
+    <label for="ln">Last Name<sup>*</sup></label>
+    <input type="text" id="ln">
+    <br>
+    <br>
+    <label for="em">EmailAddress<sup>*</sup></label>
+    <input type="email"  id="em">
+    <br>
+    
+    <p id="p1">(one e-mail id only):</p>
+    <p id="p2">e.g. smith@hotmail.com</p>
+    <br>
+    <br>
+    <label for="pw">Password(minimum 6 characters)<sup>*</sup></label>
+    <input type="password" id="pw">
+    <br>
+    <br>
+    <br>
+    <label for="ad">Address<sup>*</sup></label>
+    <textarea name="ad" id="ad" cols="60" rows="10"></textarea>
+    <br>
+    <br>
+    <label for="mb">Mobile No<sup>*</sup></label>
+    <input type="text"  id="mb">
+    <br>
+    <br>
+    <p>Gender:</p>
+    <input type="radio" name="gen" id="male">male
+    <input type="radio" name="gen" id="female">female
+    <br>
+    <br>    
+    <button>submit</button>
+    <button>reset</button>
+    </form> 
+   
+</body>
+</html>
